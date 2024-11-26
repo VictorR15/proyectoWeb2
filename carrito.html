@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>CARRITO</title>
   </head>
+
   <body>
     <header class="header">
       <div class="logo__tienda contenedor">
@@ -16,20 +17,42 @@
         <nav class="navegacion">
           <a href="crearCuenta.html">Crea tu Cuenta</a>
           <a href="ingresa.html">Ingresa</a>
-          <a href="carrito.html">
+          <div href="carrito.html" class="carrito">
             <img src="css/img/cart-regular-24.png" alt="carrito" />
-          </a>
+
+            <div class="carrito__header">
+              <div class="carrito__contenedor">
+                <!-- <div class="carrito__canasta">
+                <img src="css/img/gtr35.jpeg" alt=" " />
+                <p class="carrito__descripcion"></p>
+                <p class="carrito__precio"></p>
+              </div> -->
+              </div>
+              <div class="carrito__total">
+                <p class="carrito__precio-total">Total: $0</p>
+              </div>
+              <div>
+                <input
+                  type="submit"
+                  value="Vaciar Carrito"
+                  class="carrito__borrar"
+                />
+              </div>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
     <main class="carro contenedor">
       <h1>Carrito</h1>
-      <div class="carrito">
+      <div class="carrito__pagina">
         <div class="carrito__productos">
-          <span>PRODUCTOS</span>
+          <div class="carrito__contenedor-page"></div>
         </div>
         <div class="carrito__subtotal">
-          <span>SUBTOTAL</span>
+          <h2>
+            Subtotal <span class="carrito__subtotal-precio">: $4654</span>
+          </h2>
           <input class="carrito__btn" type="submit" value="Proceder al pago" />
         </div>
       </div>
@@ -74,5 +97,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/carrito.js"></script>
   </body>
 </html>
